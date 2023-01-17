@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif", "Lato";
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 28px;
+  justify-content: space-between;
+  background-color: #293446;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 60px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 0.5rem;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1cbb9c;
+  margin-right: 20px;
+}
+
+.mainhead {
+  min-height: 100vh;
+  background-color: #1cbb9c;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.avatar {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 15rem;
+}
+
+h1.avatarhead {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.titles {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 8rem;
+}
+.divider {
+  display: flex;
+  flex-direction: row;
+}
+
+.whiteline {
+  margin: auto;
+  width: 120px;
+  height: 0.25rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.darkline {
+  margin: auto;
+  width: 120px;
+  height: 0.25rem;
+  background-color: #293446;
+  border-radius: 10px;
+}
+
+.portfolio {
+  min-height: 100vh;
+}
+
+.portfoliohead {
+  margin-top: 100px;
+  margin-bottom: 15px;
+  color: #293446;
+  font-size: 50px;
+}
+.portfolio-grid {
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+
+.portfolio-grid-item {
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  background-color: brown;
+  margin-inline: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.portfolio-grid-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  
+}
+
+.overlay {
+  position: absolute;
+  background-color: #1cbb9c;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+.overlay>i{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #fff;
+  
+}
+
+.portfolio-grid-item:hover .overlay {
+  
+  opacity: 0.8;
+  transition: ease-in-out 0.3s;
+ 
+}
+
+.about {
+  height: 100vh;
+  background-color: #1cbb9c;
+}
+
+.headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+.abouthead {
+  color: #fff;
+  margin-top: 10%;
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+.aboutcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.aboutcontent1 {
+  margin-top: 20px;
+  width: 25%;
+  margin-inline: 10px;
+  font-size: larger;
+  font-weight: 500;
+}
+.freedownloadbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.fa-download {
+  margin-right: 5px;
+}
+.freedownloadbtn > button {
+  color: #fff;
+  background-color: #1cbb9c;
+  min-width: 220px;
+  border: 2px solid #fff;
+  padding: 1.2rem 1.75rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Montserrat", "sans-serif", "Lato";
+  cursor: pointer;
+}
+.freedownloadbtn > button:hover {
+  color: black;
+  background-color: #fff;
+  min-width: 220px;
+  border: 2px solid #fff;
+  padding: 1.2rem 1.75rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Montserrat", "sans-serif", "Lato";
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.contact {
+  min-width: 100vh;
+  color: #293446;
+}
+
+form {
+  margin: auto;
+  width: 90vw;
+  max-width: 768px;
+  border: 1px solid #ddd;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+form>button{
+  background-color: #1cbb9c;
+  color: #fff;
+  padding: 3%;
+  border-radius: 10px;
+  border: none;
+  margin-inline-end:auto ;
+  margin-top: 10px;
+  font-size: large;
+  
+}
+
+label {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #293446;
+  font-size: 25px;
+  opacity: 0.8;
+  border-bottom: 1px solid gray;
+}
+input {
+  height: 40px;
+  font-size: larger;
+  width: 100%;
+  padding: 10px 0px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  opacity: 0;
+  
+}
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(30px);
+  font-size: 0.825em;
+  transition-duration: 300ms;
+}
+
+label:focus-within > span,
+input:not(:placeholder-shown) + span {
+  font-size: small;
+  transform: translateY(0px);
+}
+
+.footer {
+  background-color: #293446;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer > div {
+  
+  padding: 80px;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 1.25rem;
+}
+
+.footer > div > h1 {
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.button-group > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #293446;
+}
+
+.button-group > button:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.footer-paragraph{
+  text-align: center;
+  max-width: 300px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-dribbble {
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-dribbble:hover {
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.fa-star {
+  font-size: 32px;
+  margin-inline: 15px;
+}
+.fa-star-light {
+  color: #fff;
+}
+
+.fa-star-dark {
+  color: #293446;
+}
