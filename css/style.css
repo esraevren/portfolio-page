@@ -65,7 +65,7 @@ a:hover {
 }
 
 .avatar {
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 50px;
   width: 15rem;
 }
@@ -110,7 +110,6 @@ h1.avatarhead {
   font-size: 50px;
 }
 .portfolio-grid {
-  border: 1px solid #c3c3c3;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -132,7 +131,6 @@ h1.avatarhead {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  
 }
 
 .overlay {
@@ -144,7 +142,7 @@ h1.avatarhead {
   opacity: 0;
 }
 
-.overlay>i{
+.overlay > i {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -152,14 +150,11 @@ h1.avatarhead {
   transform: translate(-50%, -50%);
   font-size: 60px;
   color: #fff;
-  
 }
 
 .portfolio-grid-item:hover .overlay {
-  
   opacity: 0.8;
   transition: ease-in-out 0.3s;
- 
 }
 
 .about {
@@ -188,14 +183,13 @@ h1.avatarhead {
   justify-content: center;
   align-items: center;
   color: #fff;
+  margin-inline: 30%;
 }
 
-.aboutcontent1 {
-  margin-top: 20px;
-  width: 25%;
-  margin-inline: 10px;
-  font-size: larger;
-  font-weight: 500;
+.aboutcontent>p{
+  margin-top: 30px;
+ margin-left: 20px;
+ line-height: 30px;
 }
 .freedownloadbtn {
   display: flex;
@@ -241,7 +235,6 @@ form {
   margin: auto;
   width: 90vw;
   max-width: 768px;
-  border: 1px solid #ddd;
   padding: 3vw;
   display: flex;
   flex-direction: column;
@@ -250,16 +243,15 @@ form {
   border-radius: 5px;
 }
 
-form>button{
+form > button {
   background-color: #1cbb9c;
   color: #fff;
   padding: 3%;
   border-radius: 10px;
   border: none;
-  margin-inline-end:auto ;
+  margin-inline-end: auto;
   margin-top: 10px;
   font-size: large;
-  
 }
 
 label {
@@ -283,7 +275,6 @@ input {
 }
 input::placeholder {
   opacity: 0;
-  
 }
 span {
   position: absolute;
@@ -292,6 +283,18 @@ span {
   transform: translateY(30px);
   font-size: 0.825em;
   transition-duration: 300ms;
+}
+label.message {
+  margin-top: 10px;
+  border: none;
+}
+label > textarea {
+  width: 100%;
+  border: none;
+  font-size: larger;
+  
+  font-family: "Montserrat", "sans-serif", "Lato";
+  margin-top: 30px;
 }
 
 label:focus-within > span,
@@ -308,7 +311,6 @@ input:not(:placeholder-shown) + span {
 }
 
 .footer > div {
-  
   padding: 80px;
   font-weight: 500;
   line-height: 30px;
@@ -338,7 +340,7 @@ input:not(:placeholder-shown) + span {
   background-color: #fff;
 }
 
-.footer-paragraph{
+.footer-paragraph {
   text-align: center;
   max-width: 300px;
 }
@@ -351,7 +353,6 @@ input:not(:placeholder-shown) + span {
   width: 50px;
   text-align: center;
   text-decoration: none;
-  
 }
 
 .fa-facebook:hover,
@@ -378,7 +379,7 @@ input:not(:placeholder-shown) + span {
 }
 
 .copyrights {
-  background-color: #1A252f;
+  background-color: #1a252f;
   color: #fff;
   display: flex;
   justify-content: center;
